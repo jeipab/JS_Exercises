@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: url('assets/tech_bg.jpg') no-repeat center/cover fixed;
+    background: url('../assets/tech_bg.jpg') no-repeat center/cover fixed;
     padding-top: 25px;
 }
 
