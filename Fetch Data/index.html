@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="viewport" content="width=device-width, initial-scale=1" />
+        <title>AJAX Fetch</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="assets/AJAX.png" type="image/x-icon" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Fetch Post & User Info</h1>
+
+            <div class="input-group">
+                <div id="postIdGroup">
+                    <label for="postId">Post ID:</label>
+                    <input type="number" id="postId" value="1" />
+                </div>
+
+                <div id="userIdGroup">
+                    <label for="userId">User ID:</label>
+                    <input type="number" id="userId" value="1" />
+                </div>
+            </div>
+
+            <button id="fetchBtn">Fetch Data</button>
+
+            <div id="loader" class="hidden">Loading...</div>
+
+            <div id="output" class="hidden"></div>
+
+            <div id="error" class="error hidden"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>

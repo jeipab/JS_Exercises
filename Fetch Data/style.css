@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('assets/tech_bg.jpg') no-repeat center/cover fixed;
+    padding-top: 25px;
+}
+
+.container {
+    max-width: 660px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    color: #131217;
+}
+
+.input-group {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group div {
+    display: flex;
+    flex-direction: column;
+}
+
+#postIdGroup:hover label,
+#userIdGroup:hover label {
+    color: #3c2abe;
+}
+
+input {
+    padding: 8px;
+    flex: 1;
+}
+
+input:hover {
+    border: 2px solid #3c2abe;
+}
+
+button {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 15px;
+    background-color: #131217;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: #3c2abe;
+}
+
+#loader {
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    color: #3c2abe;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3c2abe;
+    padding-bottom: 5px;
+}
+
+.error {
+    color: #dc3545;
+    background: #f8d7da;
+    padding: 10px;
+    border-left: 5px solid #dc3545;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.card {
+    margin-bottom: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f1f1f1;
+    border-left: 4px solid #3c2abe;
+    border-radius: 5px;
+}
