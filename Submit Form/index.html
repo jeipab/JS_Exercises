@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Submit Post via AJAX</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="../assets/AJAX.png" type="image/x-icon" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Submit a Post</h1>
+
+            <form id="postForm">
+            <div class="input-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required />
+            </div>
+
+            <div class="input-group">
+                <label for="body">Body:</label>
+                <textarea id="body" name="body" required></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="userId">User ID:</label>
+                <input type="number" id="userId" name="userId" required />
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+
+            <button type="submit" id="submitBtn">Submit</button>
+            </form>
+
+            <div id="loader" class="hidden">
+                <div class="spinner-popup">
+                <div class="spinner"></div>
+                <span>Submitting...</span>
+                </div>
+            </div>
+            
+
+            <div id="output" class="hidden"></div>
+            <div id="error" class="error hidden"></div>
+        </div>
+
+        <div class="container" id="submittedSection">
+            <h2>Submitted Posts</h2>
+            <div id="submittedPosts"></div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

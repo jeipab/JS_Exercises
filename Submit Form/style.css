@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../assets/comet_bg.jpg') no-repeat center/cover fixed;
+    padding-top: 25px;
+}
+
+.container {
+    max-width: 660px;
+    margin: auto;
+    background: rgb(246, 246, 246);
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    color: #131217;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border: 2px solid #5e597d;
+    outline: none;
+}
+
+.input-group:has(input:focus) label,
+.input-group:has(textarea:focus) label {
+    color: #5e597d;
+}
+
+.input-group:has(input:hover) label,
+.input-group:has(textarea:hover) label {
+    color: #5e597d;
+}
+
+.input-group:has(input:hover) input,
+.input-group:has(textarea:hover) textarea {
+    border-color: #5e597d;
+}
+
+.input-group label:active{
+    color: #131217;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #131217;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5e597d;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    font-weight: bold;
+    color: #5e597d;
+    font-size: 1.2rem;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #5e597d;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#error {
+    color: #dc3545;
+    background: #f8d7da;
+    padding: 12px;
+    border-left: 5px solid #dc3545;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+#output {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-left: 5px solid #5e597d;
+    border-radius: 6px;
+    color: #333;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-left: 4px solid #5e597d;
+    border-radius: 5px;
+}
+
+#submittedSection {
+    margin-top: 40px;
+}
+
+#submittedSection h2 {
+    text-align: center;
+    color: #131217;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #5e597d;
+    padding-bottom: 8px;
+}
+
+.post-card {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-left: 4px solid #5e597d;
+    border-radius: 6px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s;
+}
+
+.post-card h3 {
+    margin-top: 0;
+    color: #131217;
+}
+
+.post-card p {
+    margin: 6px 0;
+    color: #333;
+    line-height: 1.4;
+}
+
+.post-card small {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.edit-btn {
+    margin-top: 12px;
+    padding: 6px 12px;
+    background-color: #5e597d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+    background-color: #3c3760;
+}
